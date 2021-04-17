@@ -1,0 +1,25 @@
+{
+  "testRunner": "jest",
+  "runnerConfig": "e2e/config.json",
+  "devices": {
+    "simulator": {
+      "type": "ios.simulator",
+      "device": {
+        "type": "iPhone 12"
+      }
+    }
+  },
+  "apps": {
+    "ios.debug": {
+      "type": "ios.app",
+      "binaryPath": "./ios/DerivedData/MockRNImagePickerDetox/Build/Products/Debug-iphonesimulator/MockRNImagePickerDetox.app",
+      "build": "<...xcodebuild command...>"
+    }
+  },
+  "configurations": {
+    "ios.sim.debug": {
+      "device": "simulator",
+      "app": "ios.debug"
+    }
+  }
+}
